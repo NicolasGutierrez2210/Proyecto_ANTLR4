@@ -1,0 +1,8 @@
+MOSTRAR=1
+CARGAR=2
+GRAFICAR=3
+ID=4
+WS=5
+'mostrar'=1
+'cargar'=2
+'graficar'=3

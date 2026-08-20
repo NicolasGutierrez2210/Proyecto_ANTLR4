@@ -1,0 +1,5 @@
+mostrar ventas
+cargar clientes
+graficar ingresos
+ventas mostrar
+eliminar ventas
