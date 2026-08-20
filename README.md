@@ -1,8 +1,5 @@
 # Guía de ejecución del taller ANTLR 4
 
-Esta guía describe el procedimiento completo para compilar, generar y ejecutar los reconocedores léxicos y sintácticos construidos con **ANTLR 4** 59, 60], tomando como base la estructura del repositorio y los ejercicios de la guía práctica.
-
----
 # Estructura del proyecto
 
 ```text
