@@ -92,7 +92,7 @@ El **analizador sintáctico** (parser) toma los tokens generados por el lexer y 
 
 | Característica | Analizador Léxico (*Lexer*) | Analizador Sintáctico (*Parser*) |
 | :--- | :--- | :--- |
-| **Entrada** | Secuencia o flujo de caracteres del código fuente[cite: 1]. | Flujo continuo de tokens generado por el lexer[cite: 1]. |
-| **Salida** | Lista o flujo de tokens identificados[cite: 1]. | Árbol de análisis sintáctico (*Parse Tree*)[cite: 1]. |
-| **Nivel de análisis** | Identifica componentes individuales y sus tipos (palabras reservadas, identificadores, números). | Verifica la relación y estructura jerárquica entre tokens según la gramática[cite: 1]. |
+| **Entrada** | Secuencia o flujo de caracteres del código fuente[cite: 1]. | Flujo continuo de tokens generado por el lexer. |
+| **Salida** | Lista o flujo de tokens identificados[cite: 1]. | Árbol de análisis sintáctico (*Parse Tree*). |
+| **Nivel de análisis** | Identifica componentes individuales y sus tipos (palabras reservadas, identificadores, números). | Verifica la relación y estructura jerárquica entre tokens según la gramática. |
 | **Reglas en ANTLR** | Comienzan con letra **mayúscula** (ej. `ID`, `MOSTRAR`). | Comienzan con letra **minúscula** (ej. `program`, `instruccion`). |
