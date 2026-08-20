@@ -1,6 +1,6 @@
 # Guía de ejecución del taller ANTLR 4
 
-Esta guía describe el procedimiento completo para compilar, generar y ejecutar los reconocedores léxicos y sintácticos construidos con **ANTLR 4** [cite: 59, 60], tomando como base la estructura del repositorio y los ejercicios de la guía práctica[cite: 78, 140].
+Esta guía describe el procedimiento completo para compilar, generar y ejecutar los reconocedores léxicos y sintácticos construidos con **ANTLR 4** 59, 60], tomando como base la estructura del repositorio y los ejercicios de la guía práctica.
 
 ---
 # Estructura del proyecto
@@ -21,7 +21,7 @@ Proyecto_ANTLR4/
 └── README.md              # Documentación de requisitos y ejecución
 ## 1. Prerrequisitos y Configuración del Entorno
 
-Antes de comenzar, asegúrate de tener instalados **Java JDK** y la herramienta **ANTLR 4**[cite: 79, 81].
+Antes de comenzar, asegúrate de tener instalados **Java JDK** y la herramienta **ANTLR 4**.
 
 ### Verificación de herramientas:
 ```bash
@@ -31,13 +31,13 @@ java -version
 # 2. Verificar que la herramienta ANTLR esté accesible
 antlr4
 ```
-*(Si los comandos responden con sus versiones y opciones correspondientes, el entorno está listo [cite: 79, 81]).*
+*(Si los comandos responden con sus versiones y opciones correspondientes, el entorno está listo.*
 
 ---
 
 ## 2. Preparación de los Archivos del Proyecto
 
-Ubícate dentro de la carpeta principal del proyecto[cite: 78]:
+Ubícate dentro de la carpeta principal del proyecto:
 ```bash
 cd antlr_lab
 ```
@@ -70,16 +70,16 @@ mostrar ventas
 
 ---
 
-## 3. Flujo de Compilación y Generación
+## 3. Flujo de compilacion
 
-El proceso estándar de ANTLR requiere generar el código fuente en Java a partir de la gramática y posteriormente compilar las clases generadas[cite: 60, 65].
+El proceso estándar de ANTLR requiere generar el código fuente en Java a partir de la gramática y posteriormente compilar las clases generadas.
 
-### Paso 1: Generar el Lexer y Parser
-Ejecuta el generador de ANTLR sobre el archivo `.g4`[cite: 100, 107]:
+### Paso 1: Generar el lexer y parser
+Ejecuta el generador de ANTLR sobre el archivo `.g4`100, 107]:
 ```bash
 antlr4 Comandos.g4
 ```
-*Esto generará automáticamente en tu directorio: `ComandosLexer.java`, `ComandosParser.java`, `ComandosListener.java`, `ComandosBaseListener.java`, además de archivos `.tokens`[cite: 100, 127].*
+*Esto generará automáticamente en tu directorio: `ComandosLexer.java`, `ComandosParser.java`, `ComandosListener.java`, `ComandosBaseListener.java`, además de archivos `.tokens`.*
 
 ### Paso 2: Compilar todos los archivos Java
 Compila tanto los archivos generados como las dependencias de ANTLR:
@@ -100,7 +100,7 @@ grun <NombreGramática> <ReglaInicial> [opciones] [archivoEntrada]
 
 ---
 
-### Opción 1: Visualizar Tokens Reconocidos (`-tokens`)
+### Opción 1: Visualizar tokens reconocidos (`-tokens`)
 Permite verificar la salida generada por el analizador léxico:
 ```bash
 grun Comandos instruccion -tokens entrada.txt
@@ -115,7 +115,7 @@ grun Comandos instruccion -tokens entrada.txt
 
 ---
 
-### Opción 2: Visualizar Árbol en Formato Texto LISP (`-tree`)
+### Opción 2: Visualizar arbol en formato texto LISP (`-tree`)
 Permite comprobar la estructura jerárquica del parser en la terminal:
 ```bash
 grun Comandos instruccion -tree entrada.txt
@@ -128,7 +128,7 @@ grun Comandos instruccion -tree entrada.txt
 
 ---
 
-### Opción 3: Visualizar Árbol Sintáctico Gráfico (`-gui`)
+### Opción 3: Visualizar arbol gráfico (`-gui`)
 Abre una ventana gráfica interactiva para ver el árbol visualmente:
 ```bash
 grun Comandos instruccion -gui entrada.txt
@@ -136,7 +136,7 @@ grun Comandos instruccion -gui entrada.txt
 
 ---
 
-## 5. Pruebas Interactivas por Consola (Casos Válidos e Inválidos)
+## 5. Pruebas por consola (Casos válidos e inválidos)
 
 Si deseas probar frases directamente desde la terminal sin necesidad de un archivo `.txt`:
 
@@ -144,13 +144,13 @@ Si deseas probar frases directamente desde la terminal sin necesidad de un archi
 grun Comandos instruccion -tree
 ```
 
-1. Escribe la instrucción a evaluar (por ejemplo: `graficar ingresos` o `ventas mostrar`)[cite: 146].
+1. Escribe la instrucción a evaluar (por ejemplo: `graficar ingresos` o `ventas mostrar`)146].
 2. Presiona `Enter`.
 3. Envía la señal de fin de archivo (**EOF**):
    * **Linux / macOS:** `Ctrl + D`
    * **Windows:** `Ctrl + Z` seguido de `Enter`
 
-### Resumen de casos de prueba para el reporte:
+### Resumen de casos de prueba:
 
 | Tipo de Caso | Entrada | Comportamiento Esperado |
 | :--- | :--- | :--- |
