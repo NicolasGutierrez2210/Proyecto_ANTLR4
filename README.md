@@ -1,5 +1,7 @@
 # Guía de ejecución del taller ANTLR 4
 
+Integrantes: Ángel Arcos, Yeimy Beltrán, Nicolás Guitierrez y Samuel Lagos 
+
 # Estructura del proyecto
 
 ```text
