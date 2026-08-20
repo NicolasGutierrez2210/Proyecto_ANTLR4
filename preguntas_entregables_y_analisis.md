@@ -2,7 +2,7 @@
 
 ### 1. ¿Cuál es la diferencia entre un lexema y un token?
 * **Lexema:** Es la palabra o texto exacto tal cual como lo escribimos en el código (por ejemplo, el texto mostrar, ventas o el número 105).
-* **Token:** Es la categoría o etiqueta que le pone el analizador para saber de qué tipo es (por ejemplo, MOSTRAR, ID o `ENTERO`).
+* **Token:** Es la categoría o etiqueta que le pone el analizador para saber de qué tipo es (por ejemplo, MOSTRAR, ID o ENTERO).
 
 
 
@@ -84,7 +84,7 @@ El **analizador sintáctico** (parser) toma los tokens generados por el lexer y 
 
 2. **Caso 2: Error Léxico / Sintáctico por Comando No Reconocido**
    * **Entrada de prueba:** eliminar ventas
-   * **Explicación:** La palabra `eliminar` no coincide con ninguna de las palabras clave de la gramática (`MOSTRAR`, `CARGAR`, `GRAFICAR`). El lexer la categoriza genéricamente como un ID. Posteriormente, el parser recibe la secuencia `<ID> <ID>` (`eliminar ventas`), la cual no encaja en la estructura sintáctica de una `instruccion` y genera un error.
+   * **Explicación:** La palabra eliminar no coincide con ninguna de las palabras clave de la gramática (`MOSTRAR`, `CARGAR`, `GRAFICAR`). El lexer la categoriza genéricamente como un ID. Posteriormente, el parser recibe la secuencia `<ID> <ID>` (eliminar ventas), la cual no encaja en la estructura sintáctica de una instruccion y genera un error.
 
 
 
