@@ -6,16 +6,16 @@
 Proyecto_ANTLR4/
 ├── doc/
 │   ├── arbol.png          # Imagen exportada del árbol sintáctico
-│   └── arbol.ps           # Gráfico vectorial en PostScript
+│   └── arbol.ps           # Gráfico en PostScript
 ├── src/
-│   ├── Comandos.g4        # Gramática fuente (Lexer + Parser)
-│   ├── Main.java          # Programa principal ejecutable
+│   ├── Comandos.g4        # Gramática fuente (Lexer y Parser)
+│   ├── Main.java          # Programa principal
 │   └── ...                # Archivos Java generados por ANTLR
 ├── tests/
 │   ├── pruebas.txt        # Casos de prueba mixtos (válidos e inválidos)
 │   └── validas.txt        # Casos de prueba válidos para la gráfica
-├── .gitignore             # Exclusión de binarios compilados
-└── README.md              # Documentación de requisitos y ejecución
+├── .gitignore             
+└── README.md              
 ## 1. Prerrequisitos y Configuración del Entorno
 
 Antes de comenzar, asegúrate de tener instalados **Java JDK** y la herramienta **ANTLR 4**.
