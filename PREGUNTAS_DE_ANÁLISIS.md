@@ -52,7 +52,7 @@ Primero escribimos un archivo `.g4` con los comandos propios que queremos para n
 
 ---
 
-## Preguntas de Reglas
+# Preguntas de Reglas
 
 ### 1. Explicación de las reglas léxicas utilizadas
 
